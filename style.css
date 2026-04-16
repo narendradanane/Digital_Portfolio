@@ -583,46 +583,7 @@ section { padding: 6rem 7vw; }
 .bubble-blue   .exp-tags span { background: rgba(59,130,246,.1);  color: var(--blue); }
 .bubble-pink   .exp-tags span { background: rgba(236,72,153,.1);  color: var(--pink); }
 
-/* zorov-sanji */
-.zorov-sanji{
-  position:absolute;
-  right:-90px;
-  bottom: -100px;
-  z-index:5;
-}
 
-.zorov-sanji img{
-  width:820px;
-  pointer-events:none;
-  opacity:.75;   /* makes it lighter */
-}
-/* NAMI CHARACTER */
-.nami-character{
-  position:absolute;
-  left:430px;
-  bottom:580px;
-  z-index:4;
-}
-
-.nami-character img{
-  width:300px;
-  opacity:.75; 
-}
-
-/* LUFFY CHARACTER */
-.luffy-pointer{
-  position:absolute;
-  right:-90px;
-  bottom: 1270px;
-  z-index:5;
-}
-
-.luffy-pointer img{
-  width:820px;
-  height:1300px;
-  pointer-events:none;
-  opacity:.75;   /* makes it lighter */
-}
 
 /* ═══ PROJECTS ═══════════════════════════════════ */
 .sec-projects { background: var(--white); }
