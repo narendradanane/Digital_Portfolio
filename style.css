@@ -441,6 +441,7 @@ section { padding: 6rem 7vw; }
 .about-tags { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1.8rem; }
 
 /* ═══ SKILLS ═════════════════════════════════════ */
+<<<<<<< HEAD
 /* ═══ EDUCATION ═════════════════════════════════ */
 .sec-education {
   background: linear-gradient(160deg, #faf5ff 0%, #eff6ff 100%);
@@ -553,6 +554,8 @@ section { padding: 6rem 7vw; }
 }
 
 /* ═══ SKILLS ════════════════════════════════════ */
+=======
+>>>>>>> 8798183aa4e0d638ba7cb74ebb2495fd1c247df0
 .sec-skills { background: var(--white); }
 
 .skills-tabs {
