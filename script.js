@@ -134,7 +134,6 @@ document.querySelectorAll('.cert-card').forEach((c, i) => {
 });
 onVisible('.cert-card', el => el.classList.add('visible'), 0.05);
 
-<<<<<<< HEAD
 /* ── EDUCATION CARDS ─────────────────────── */
 document.querySelectorAll('.edu-card').forEach((c, i) => {
   c.style.transitionDelay = (i * 0.12) + 's';
@@ -148,8 +147,6 @@ onVisible('.edu-card', el => {
   }
 }, 0.1);
 
-=======
->>>>>>> 8798183aa4e0d638ba7cb74ebb2495fd1c247df0
 /* ── CSR CARDS ───────────────────────────── */
 document.querySelectorAll('.csr-card').forEach((c, i) => {
   c.style.transitionDelay = (i * 0.08) + 's';
