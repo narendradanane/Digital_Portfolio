@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Narendra Danane — DevOps & SRE Engineer</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Space+Grotesk:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">
+    <span class="logo-dot"></span>Narendra<span class="logo-accent">.</span>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#certifications">Certs</a></li>
+    <li><a href="#testimonials">Voices</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="Narendra_Danane_Resume.pdf" download class="nav-cta">
+    <i class="fa fa-download"></i> Resume
+  </a>
+  <button class="burger" id="burger"><span></span><span></span><span></span></button>
+</nav>
+
+<!-- ═══ HERO ═══ -->
+<section id="hero">
+  <div class="hero-shapes" aria-hidden="true">
+    <div class="hs hs1"></div>
+    <div class="hs hs2"></div>
+    <div class="hs hs3"></div>
+    <div class="hs hs4"></div>
+    <div class="hs hs5"></div>
+  </div>
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="hb-dot"></span>
+        <span>Available for DevOps · SRE · Cloud Roles</span>
+      </div>
+      <h1 class="hero-h1">
+        Hi, I'm <br/>
+        <span class="hero-name-grad">Narendra Danane</span>
+      </h1>
+      <div class="hero-typed-wrap">
+        <span class="typed-prefix">~/</span>
+        <span id="heroTyped" class="hero-typed-text"></span>
+        <span class="typed-cur">|</span>
+      </div>
+      <p class="hero-para">
+        Infrastructure Operations &amp; IAM professional with <strong>6+ years</strong> of enterprise experience. Currently at <strong>Infosys</strong> — building the bridge between deep ops expertise and modern DevOps/SRE practices.
+      </p>
+      <div class="hero-btns">
+        <a href="Narendra_Danane_Resume.pdf" download class="btn-grad">
+          <i class="fa fa-download"></i> Download Resume
+        </a>
+        <a href="#contact" class="btn-white">Let's Talk <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="hero-stats">
+        <div class="hs-stat">
+          <span class="hs-num" data-v="6">0</span><span class="hs-suf">+</span>
+          <small>Years Exp</small>
+        </div>
+        <div class="hs-sep"></div>
+        <div class="hs-stat">
+          <span class="hs-num" data-v="10">0</span><span class="hs-suf">+</span>
+          <small>Certifications</small>
+        </div>
+        <div class="hs-sep"></div>
+        <div class="hs-stat">
+          <span class="hs-num" data-v="20">0</span><span class="hs-suf">+</span>
+          <small>Tools Mastered</small>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hv-photo-wrap">
+        <div class="hv-blob"></div>
+        <div class="hv-ring hv-r1"></div>
+        <div class="hv-ring hv-r2"></div>
+        <img src="Narendra.jpg" alt="Narendra Danane" class="hv-photo"/>
+      </div>
+      <div class="hv-floats">
+        <div class="hf hf1"><i class="devicon-docker-plain colored"></i><span>Docker</span></div>
+        <div class="hf hf2"><i class="devicon-kubernetes-plain colored"></i><span>Kubernetes</span></div>
+        <div class="hf hf3"><i class="devicon-terraform-plain colored"></i><span>Terraform</span></div>
+        <div class="hf hf4"><i class="devicon-jenkins-plain colored"></i><span>Jenkins</span></div>
+        <div class="hf hf5"><i class="devicon-grafana-plain colored"></i><span>Grafana</span></div>
+        <div class="hf hf6"><i class="devicon-git-plain colored"></i><span>Git</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-socials">
+    <a href="https://github.com/narendradanane" target="_blank" class="soc-pill"><i class="fab fa-github"></i><span>GitHub</span></a>
+    <a href="https://www.linkedin.com/in/narendra-danane-a9145b255/" target="_blank" class="soc-pill soc-li"><i class="fab fa-linkedin-in"></i><span>LinkedIn</span></a>
+    <a href="mailto:narendradanane@gmail.com" class="soc-pill soc-gm"><i class="fas fa-envelope"></i><span>Email</span></a>
+    <a href="https://wa.me/917350060742" target="_blank" class="soc-pill soc-wa"><i class="fab fa-whatsapp"></i><span>WhatsApp</span></a>
+  </div>
+  <div class="scroll-down"><i class="fas fa-chevron-down"></i></div>
+</section>
+
+<!-- ═══ ABOUT ═══ -->
+<section id="about" class="sec-about">
+  <div class="about-grid">
+    <div class="about-img-side">
+      <div class="about-img-wrap">
+        <img src="Devops.jpg" alt="DevOps" class="about-img"/>
+        <div class="about-img-badge">
+          <i class="fas fa-certificate"></i>
+          <span>Azure Certified</span>
+        </div>
+        <div class="about-stat-card asc1">
+          <span class="asc-num">6+</span>
+          <small>Years Exp</small>
+        </div>
+        <div class="about-stat-card asc2">
+          <span class="asc-num">20+</span>
+          <small>Tools Used</small>
+        </div>
+      </div>
+    </div>
+    <div class="about-text-side">
+      <div class="sec-label purple">About Me</div>
+      <h2 class="sec-h2">Infrastructure Engineer<br/><span class="underline-grad">Building the Future</span></h2>
+      <p>I'm a seasoned <strong>Infrastructure Operations</strong> and <strong>IAM professional</strong> at Infosys, supporting global enterprise clients. My core expertise is in identity lifecycle management — SailPoint IdentityIQ, CyberArk PAM, Active Directory — paired with enterprise monitoring on Dynatrace, HPOM &amp; NNM.</p>
+      <p>With my <strong>Microsoft Azure Fundamentals</strong> certification in hand, I'm actively building out DevOps skills: Docker, Kubernetes, Terraform, Jenkins and Grafana, engineering my path into Site Reliability Engineering.</p>
+      <div class="about-tags">
+        <span class="tag blue">SailPoint IIQ</span>
+        <span class="tag purple">CyberArk PAM</span>
+        <span class="tag pink">Active Directory</span>
+        <span class="tag orange">Dynatrace</span>
+        <span class="tag green">ServiceNow</span>
+        <span class="tag cyan">Docker</span>
+        <span class="tag blue">Kubernetes</span>
+        <span class="tag purple">Terraform</span>
+        <span class="tag orange">Jenkins</span>
+        <span class="tag pink">PowerShell</span>
+        <span class="tag green">Linux</span>
+        <span class="tag cyan">Grafana</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ EDUCATION ═══ -->
+<section id="education" class="sec-education">
+  <div class="sec-label-center purple"></div>
+  <h2 class="sec-h2 centered">Academic <span class="underline-grad">Foundation</span></h2>
+  <p class="sec-sub">The educational journey that shaped my technical mindset</p>
+
+  <div class="edu-grid">
+
+    <!-- Card 1: Bachelor of Engineering -->
+    <div class="edu-card edu-be">
+      <div class="edu-icon-wrap">
+        <i class="fas fa-graduation-cap"></i>
+      </div>
+      <div class="edu-badge">Bachelor of Engineering</div>
+      <h3 class="edu-degree">Computer Science &amp; Engineering</h3>
+      <div class="edu-institute">
+        <i class="fas fa-university"></i>
+        Vedica Institute of Technology
+      </div>
+      <div class="edu-meta">
+        <div class="edu-meta-item">
+          <i class="fas fa-calendar-alt"></i>
+          <span>Year of Completion: <strong>2022</strong></span>
+        </div>
+        <div class="edu-meta-item">
+          <i class="fas fa-star"></i>
+          <span>CGPA: <strong>6.89</strong></span>
+        </div>
+      </div>
+      <div class="edu-cgpa-bar">
+        <div class="edu-cgpa-fill" data-w="68.9"></div>
+      </div>
+    </div>
+
+    <!-- Card 2: Diploma of Engineering -->
+    <div class="edu-card edu-diploma">
+      <div class="edu-icon-wrap">
+        <i class="fas fa-scroll"></i>
+      </div>
+      <div class="edu-badge">Diploma of Engineering</div>
+      <h3 class="edu-degree">Computer Science &amp; Engineering</h3>
+      <div class="edu-institute">
+        <i class="fas fa-university"></i>
+        Vedica Institute of Technology
+      </div>
+      <div class="edu-meta">
+        <div class="edu-meta-item">
+          <i class="fas fa-calendar-alt"></i>
+          <span>Year of Completion: <strong>2019</strong></span>
+        </div>
+        <div class="edu-meta-item">
+          <i class="fas fa-star"></i>
+          <span>CGPA: <strong>6.50</strong></span>
+        </div>
+      </div>
+      <div class="edu-cgpa-bar">
+        <div class="edu-cgpa-fill" data-w="65"></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══ SKILLS ═══ -->
+<section id="skills" class="sec-skills">
+  <div class="sec-label-center cyan"></div>
+  <h2 class="sec-h2 centered">My Technical <span class="underline-grad">Superpowers</span></h2>
+  <p class="sec-sub">A spectrum of tools I use to build, monitor and secure enterprise infrastructure</p>
+
+  <div class="skills-tabs">
+    <button class="stab active" data-tab="devops">DevOps &amp; Cloud</button>
+    <button class="stab" data-tab="iam">IAM &amp; Security</button>
+    <button class="stab" data-tab="monitoring">Monitoring</button>
+    <button class="stab" data-tab="scripting">Scripting &amp; DB</button>
+  </div>
+
+  <div class="skills-panels">
+
+    <div class="skills-panel active" id="tab-devops">
+      <div class="skill-cards-grid">
+        <div class="skcard sk-docker">
+          <div class="skc-icon"><i class="devicon-docker-plain colored"></i></div>
+          <div class="skc-info">
+            <span>Docker</span>
+            <div class="skc-bar"><div class="skc-fill" data-w="75"></div></div>
+            <small>75%</small>
+          </div>
+        </div>
+        <div class="skcard sk-k8s">
+          <div class="skc-icon"><i class="devicon-kubernetes-plain colored"></i></div>
+          <div class="skc-info">
+            <span>Kubernetes</span>
+            <div class="skc-bar"><div class="skc-fill" data-w="65"></div></div>
+            <small>65%</small>
+          </div>
+        </div>
+        <div class="skcard sk-terra">
+          <div class="skc-icon"><i class="devicon-terraform-plain colored"></i></div>
+          <div class="skc-info">
+            <span>Terraform</span>
+            <div class="skc-bar"><div class="skc-fill" data-w="65"></div></div>
+            <small>65%</small>
+          </div>
+        </div>
+        <div class="skcard sk-jenkins">
+          <div class="skc-icon"><i class="devicon-jenkins-plain colored"></i></div>
+          <div class="skc-info">
+            <span>Jenkins</span>
+            <div class="skc-bar"><div class="skc-fill" data-w="70"></div></div>
+            <small>70%</small>
+          </div>
+        </div>
+        <div class="skcard sk-git">
+          <div class="skc-icon"><i class="devicon-git-plain colored"></i></div>
+          <div class="skc-info">
+            <span>Git / GitHub</span>
+            <div class="skc-bar"><div class="skc-fill" data-w="85"></div></div>
+            <small>85%</small>
+          </div>
+        </div>
+        <div class="skcard sk-grafana">
+          <div class="skc-icon"><i class="devicon-grafana-plain colored"></i></div>
+          <div class="skc-info">
+            <span>Grafana</span>
+            <div class="skc-bar"><div class="skc-fill" data-w="70"></div></div>
+            <small>70%</small>
+          </div>
+        </div>
+        <div class="skcard sk-azure">
+          <div class="skc-icon"><i class="devicon-azure-plain colored"></i></div>
+          <div class="skc-info">
+            <span>Azure</span>
+            <div class="skc-bar"><div class="skc-fill" data-w="75"></div></div>
+            <small>75%</small>
+          </div>
+        </div>
+        <div class="skcard sk-cicd">
+          <div class="skc-icon"><i class="fas fa-code-branch"></i></div>
+          <div class="skc-info">
+            <span>CI/CD Pipelines</span>
+            <div class="skc-bar"><div class="skc-fill" data-w="70"></div></div>
+            <small>70%</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="skills-panel" id="tab-iam">
+      <div class="skill-cards-grid">
+        <div class="skcard sk-sail">
+          <div class="skc-icon"><i class="fas fa-id-card-clip"></i></div>
+          <div class="skc-info"><span>SailPoint IIQ</span><div class="skc-bar"><div class="skc-fill" data-w="90"></div></div><small>90%</small></div>
+        </div>
+        <div class="skcard sk-cyber">
+          <div class="skc-icon"><i class="fas fa-lock"></i></div>
+          <div class="skc-info"><span>CyberArk PAM</span><div class="skc-bar"><div class="skc-fill" data-w="88"></div></div><small>88%</small></div>
+        </div>
+        <div class="skcard sk-ad">
+          <div class="skc-icon"><i class="fab fa-windows"></i></div>
+          <div class="skc-info"><span>Active Directory</span><div class="skc-bar"><div class="skc-fill" data-w="85"></div></div><small>85%</small></div>
+        </div>
+        <div class="skcard sk-jml">
+          <div class="skc-icon"><i class="fas fa-users-gear"></i></div>
+          <div class="skc-info"><span>JML Lifecycle</span><div class="skc-bar"><div class="skc-fill" data-w="90"></div></div><small>90%</small></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="skills-panel" id="tab-monitoring">
+      <div class="skill-cards-grid">
+        <div class="skcard sk-dyna">
+          <div class="skc-icon"><i class="fas fa-satellite-dish"></i></div>
+          <div class="skc-info"><span>Dynatrace</span><div class="skc-bar"><div class="skc-fill" data-w="88"></div></div><small>88%</small></div>
+        </div>
+        <div class="skcard sk-hpom">
+          <div class="skc-icon"><i class="fas fa-server"></i></div>
+          <div class="skc-info"><span>HPOM</span><div class="skc-bar"><div class="skc-fill" data-w="80"></div></div><small>80%</small></div>
+        </div>
+        <div class="skcard sk-snow">
+          <div class="skc-icon"><i class="fas fa-ticket"></i></div>
+          <div class="skc-info"><span>ServiceNow</span><div class="skc-bar"><div class="skc-fill" data-w="85"></div></div><small>85%</small></div>
+        </div>
+        <div class="skcard sk-nnm">
+          <div class="skc-icon"><i class="fas fa-network-wired"></i></div>
+          <div class="skc-info"><span>NNM</span><div class="skc-bar"><div class="skc-fill" data-w="78"></div></div><small>78%</small></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="skills-panel" id="tab-scripting">
+      <div class="skill-cards-grid">
+        <div class="skcard sk-ps">
+           <div class="pc-icon"><i class="fas fa-terminal"></i></div>
+          <div class="skc-info"><span>PowerShell</span><div class="skc-bar"><div class="skc-fill" data-w="85"></div></div><small>85%</small></div>
+        </div>
+        <div class="skcard sk-linux">
+          <div class="skc-icon"><i class="devicon-linux-plain colored"></i></div>
+          <div class="skc-info"><span>Linux Shell</span><div class="skc-bar"><div class="skc-fill" data-w="82"></div></div><small>82%</small></div>
+        </div>
+        <div class="skcard sk-sql">
+          <div class="skc-icon"><i class="devicon-microsoftsqlserver-plain colored"></i></div>
+          <div class="skc-info"><span>SQL Server</span><div class="skc-bar"><div class="skc-fill" data-w="78"></div></div><small>78%</small></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══ EXPERIENCE ═══ -->
+<section id="experience" class="sec-exp">
+  <div class="sec-label-center orange"></div>
+  <h2 class="sec-h2 centered">Professional <span class="underline-grad">Timeline</span></h2>
+
+  <div class="exp-timeline">
+    <div class="exp-track"></div>
+
+    <!-- INFOSYS IAM -->
+    <div class="exp-item ei-left">
+      <div class="exp-bubble bubble-purple">
+        <div class="exp-date">Sep 2024 – Present</div>
+        <div class="exp-company"><i class="fas fa-building"></i> Infosys</div>
+        <h3>IT System Administrator – IAM</h3>
+        <p><strong>Project:</strong> Liberty Global</p>
+        
+         <h4>Identity & Access Management (IAM)</h4>
+        <ul>
+          <li>Managed end-to-end Joiner–Mover–Leaver (JML) lifecycle including onboarding, access provisioning, modification, and deprovisioning across enterprise systems.</li>
+          <li>Executed onboarding via SailPoint IdentityIQ ensuring successful account creation and access provisioning through aggregation cycles.</li>
+          <li>Investigated and resolved provisioning and deprovisioning failures ensuring successful execution in subsequent cycles.</li>
+          <li>Maintained identity data accuracy including manager hierarchy, user attributes, and organizational structure.</li>
+          <li>Performed access reviews, audits, and recertification support to ensure IAM policy compliance.</li>
+          <li>Handled access requests, validations, and approvals via ticketing systems ensuring proper authorization and SLA adherence.</li>
+          <li>Provided L1/L2 support for access issues, login failures, and user discrepancies.</li>
+        </ul>
+
+        <h4>SailPoint IdentityIQ (IIQ)</h4>
+        <ul>
+          <li>Supported day-to-day operations of SailPoint IIQ integrated with Active Directory and authoritative sources.</li>
+          <li>Monitored and troubleshot aggregation failures, identity refresh issues, and provisioning errors.</li>
+          <li>Executed scheduled tasks including account aggregation, identity refresh, and reconciliation processes.</li>
+          <li>Performed identity cleanup, pruning, and correlation validation between authoritative systems and AD.</li>
+          <li>Resolved deferred deprovisioning issues and Active Roles synchronization failures.</li>
+          <li>Coordinated with L3 teams for connector updates, rule changes, and platform enhancements.</li>
+          <li>Generated operational reports and supported platform stability and governance activities.</li>
+        </ul>
+
+        <h4>CyberArk PAM</h4>
+        <ul>
+          <li>Managed privileged access lifecycle including onboarding, provisioning, and deprovisioning of privileged users.</li>
+          <li>Configured and managed Safes, safe memberships, and permissions.</li>
+          <li>Onboarded and managed privileged accounts across Windows, AD, and UNIX/Linux platforms.</li>
+          <li>Troubleshot access issues including safe permissions, account visibility, and RDP/SSH connection failures.</li>
+          <li>Validated access requests based on business justification, approvals, and least-privilege principles.</li>
+          <li>Monitored CyberArk operations and escalated Vault/PSM platform issues when required.</li>
+          <li>Ensured compliance with security policies, audit requirements, and privileged access controls.</li>
+        </ul>
+
+        <div class="exp-tags">
+          <span>SailPoint IIQ</span>
+          <span>CyberArk PAM</span>
+          <span>Active Directory</span>
+          <span>ServiceNow</span>
+        </div>
+      </div>
+      <div class="exp-dot dot-purple"></div>
+    </div>
+
+    <!-- INFOSYS COMMAND CENTER -->
+    <div class="exp-item ei-right">
+      <div class="exp-dot dot-blue"></div>
+      <div class="exp-bubble bubble-blue">
+        <div class="exp-date">Apr 2023 – Aug 2024</div>
+        <div class="exp-company"><i class="fas fa-building"></i> Infosys</div>
+        <h3>IT Command Center Engineer</h3>
+        <p><strong>Project:</strong> DTE Energy</p>
+
+        <ul>
+          <li>Monitored enterprise infrastructure and applications using Dynatrace, HPOM, and NNM ensuring high system availability.</li>
+          <li>Managed incident and request queues via ServiceNow including triaging, prioritization, and escalation.</li>
+          <li>Executed job scheduling and monitoring using Tivoli Workload Scheduler (TWS).</li>
+          <li>Performed server maintenance activities including restarts, health checks, and performance validation.</li>
+          <li>Managed Active Directory access including group permissions and folder level access control.</li>
+          <li>Automated system maintenance tasks such as disk cleanup using PowerShell scripts.</li>
+          <li>Installed and configured Dynatrace for application and infrastructure monitoring.</li>
+          <li>Sent P1/P2 incident communications and coordinated with cross-functional teams for resolution.</li>
+          <li>Documented troubleshooting steps and created knowledge base articles for recurring issues.</li>
+          <li>Generated reports on system health, incidents, and operational improvements.</li>
+        </ul>
+
+        <div class="exp-tags">
+          <span>Dynatrace</span>
+          <span>HPOM</span>
+          <span>NNM</span>
+          <span>TWS</span>
+          <span>PowerShell</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- INVENTIVE GLOBAL -->
+    <div class="exp-item ei-left">
+      <div class="exp-bubble bubble-pink">
+        <div class="exp-date">Mar 2019 – Feb 2023</div>
+        <div class="exp-company"><i class="fas fa-building"></i> Inventive Global Solutions</div>
+        <h3>Senior Development Executive – Production / Application Support</h3>
+
+        <ul>
+          <li>Provided L1/L2 production support for enterprise applications ensuring system stability and timely incident resolution.</li>
+          <li>Monitored scheduled batch jobs and application processes identifying failures and restoring services within defined SLAs.</li>
+          <li>Investigated and resolved application and data related issues including backend processing errors.</li>
+          <li>Performed SQL Server operations including query optimization, joins, subqueries, and index validation.</li>
+          <li>Utilized Linux commands such as sed, grep, find, ssh, scp, sftp, awk, crontab, and tail for log analysis.</li>
+          <li>Monitored CPU and memory utilization metrics to detect performance anomalies.</li>
+          <li>Managed incident and request tickets in ServiceNow ensuring SLA compliance.</li>
+          <li>Worked in a 24×7 ITIL driven support environment following incident, problem, and change management processes.</li>
+        </ul>
+
+        <div class="exp-tags">
+          <span>ServiceNow</span>
+          <span>SQL Server</span>
+          <span>Linux</span>
+          <span>ITIL</span>
+        </div>
+      </div>
+      <div class="exp-dot dot-pink"></div>
+    </div>
+
+  </div>
+</section>
+
+
+
+</div>
+<!-- ═══ PROJECTS ═══ -->
+<section id="projects" class="sec-projects">
+  <div class="sec-label-center green"></div>
+  <h2 class="sec-h2 centered">Automation <span class="underline-grad">Projects</span></h2>
+
+  <div class="proj-cards">
+    <div class="proj-card pc-blue">
+      <div class="pc-header">
+        <div class="pc-icon"><i class="fas fa-terminal"></i></div>
+        <span class="pc-number">01</span>
+      </div>
+      <h3>Windows Temp Cleaner</h3>
+      <p>PowerShell automation tool to safely clean the Windows %TEMP% directory, reclaiming disk space without disrupting running processes.</p>
+      <ul>
+        <li><i class="fas fa-circle-check"></i> Removes junk temporary files safely</li>
+        <li><i class="fas fa-circle-check"></i> Skips files currently in use</li>
+        <li><i class="fas fa-circle-check"></i> One-command execution with Git version control</li>
+      </ul>
+      <div class="pc-footer">
+        <div class="pc-chips"><span>PowerShell</span><span>Git</span><span>Windows</span></div>
+        <a href="https://github.com/narendradanane/windows-temp-cleaner" target="_blank" class="pc-gh-btn"><i class="fab fa-github"></i> GitHub</a>
+      </div>
+    </div>
+
+    <div class="proj-card pc-orange">
+      <div class="pc-header">
+        <div class="pc-icon"><i class="fas fa-bolt"></i></div>
+        <span class="pc-number">02</span>
+      </div>
+      <h3>Smart Battery Saver</h3>
+      <p>PowerShell tool to optimize laptop battery life by intelligently managing system resources and background processes.</p>
+      <ul>
+        <li><i class="fas fa-circle-check"></i> Enables battery saver &amp; reduces brightness</li>
+        <li><i class="fas fa-circle-check"></i> Disables Bluetooth, keeps Wi-Fi active</li>
+        <li><i class="fas fa-circle-check"></i> Detects heavy apps before closing</li>
+      </ul>
+      <div class="pc-footer">
+        <div class="pc-chips"><span>PowerShell</span><span>Automation</span><span>Git</span></div>
+        <a href="https://github.com/narendradanane/smart-battery-saver" target="_blank" class="pc-gh-btn"><i class="fab fa-github"></i> GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HOME LAB -->
+  <div class="homelab-card">
+
+    <video class="hl-bg-video" autoplay muted loop playsinline>
+      <source src="/video/homelab-bg.mp4" type="video/mp4">
+    </video>
+
+    <div class="hl-left">
+      <div class="pc-header homelab-header" style="margin-bottom:.8rem">
+        <div class="pc-icon"><i class="fas fa-diagram-project"></i></div>
+        <span class="pc-number hl-number">03</span>
+      </div>
+      <div class="sec-label purple" style="margin-bottom:.8rem">Home Lab</div>
+      <h3 class="hl-title">DevOps Home Lab <span class="wip-badge">In Progress</span></h3>
+      <p>Building a production-grade DevOps environment at home — containerised microservices, Jenkins CI/CD pipelines, Terraform IaC, full Prometheus + Grafana observability stack on Kubernetes.</p>
+      <div class="hl-features">
+        <div class="hlf"><i class="devicon-docker-plain colored"></i><span>Containerised Microservices</span></div>
+        <div class="hlf"><i class="devicon-jenkins-plain colored"></i><span>Jenkins CI/CD Pipelines</span></div>
+        <div class="hlf"><i class="devicon-terraform-plain colored"></i><span>Terraform IaC</span></div>
+        <div class="hlf"><i class="devicon-kubernetes-plain colored"></i><span>Kubernetes Cluster</span></div>
+        <div class="hlf"><i class="devicon-grafana-plain colored"></i><span>Prometheus + Grafana</span></div>
+      </div>
+    </div>
+    <div class="hl-right">
+      <div class="hl-pipeline">
+        <div class="hlp"><div class="hlp-ico hlp-git"><i class="devicon-git-plain colored"></i></div><span>Git</span></div>
+        <div class="hlp-line"></div>
+        <div class="hlp"><div class="hlp-ico hlp-jenkins"><i class="devicon-jenkins-plain colored"></i></div><span>Jenkins</span></div>
+        <div class="hlp-line"></div>
+        <div class="hlp"><div class="hlp-ico hlp-terra"><i class="devicon-terraform-plain colored"></i></div><span>Terraform</span></div>
+        <div class="hlp-line"></div>
+        <div class="hlp"><div class="hlp-ico hlp-k8s"><i class="devicon-kubernetes-plain colored"></i></div><span>Kubernetes</span></div>
+        <div class="hlp-line"></div>
+        <div class="hlp"><div class="hlp-ico hlp-grafana"><i class="devicon-grafana-plain colored"></i></div><span>Grafana</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CERTIFICATIONS ═══ -->
+<section id="certifications" class="sec-certs">
+  <div class="sec-label-center blue"></div>
+  <h2 class="sec-h2 centered">Credentials &amp; <span class="underline-grad">Certifications</span></h2>
+
+  <div class="cert-mosaic">
+    <a href="https://learn.microsoft.com/en-us/users/narendradanane-2961/credentials/d4ffeaf4d9cfc4ea" target="_blank" class="cert-card cc-featured cc-azure">
+      <div class="cc-icon"><i class="devicon-azure-plain colored"></i></div>
+      <div class="cc-info">
+        <strong>Microsoft Azure Fundamentals</strong>
+        <span>Microsoft</span>
+        <code>D4FFEAF4D9CFC4EA</code>
+      </div>
+      <div class="cc-link-btn">View <i class="fas fa-external-link-alt"></i></div>
+    </a>
+    <a href="https://courses.cognitiveclass.ai/certificates/eb14353b15ce4dada9d352ed7a12c05c" target="_blank" class="cert-card cc-ibm">
+      <div class="cc-icon"><i class="fas fa-database"></i></div>
+      <div class="cc-info">
+        <strong>SQL &amp; Relational Databases 101</strong>
+        <span>Cognitive Class — IBM</span>
+      </div>
+      <div class="cc-link-btn">View <i class="fas fa-external-link-alt"></i></div>
+    </a>
+    <a href="https://www.linkedin.com/learning/certificates/5e9fc3aa135e0045d7d8d385b215c88fd654ccbadd8b74f48c0dc1464e7d0d02" target="_blank" class="cert-card cc-li">
+      <div class="cc-icon"><i class="fab fa-linkedin-in"></i></div>
+      <div class="cc-info">
+        <strong>ServiceNow</strong>
+        <span>LinkedIn Learning</span>
+      </div>
+      <div class="cc-link-btn">View <i class="fas fa-external-link-alt"></i></div>
+    </a>
+    <a href="https://www.linkedin.com/learning/certificates/51a2899ef4a42bb35bfd5f3ad5aaadefb11bf06c5b950f525d92cd8c68d6fe31" target="_blank" class="cert-card cc-linux">
+      <div class="cc-icon"><i class="devicon-linux-plain colored"></i></div>
+      <div class="cc-info">
+        <strong>Linux</strong>
+        <span>LinkedIn Learning</span>
+      </div>
+      <div class="cc-link-btn">View <i class="fas fa-external-link-alt"></i></div>
+    </a>
+    <div class="cert-card cc-kali">
+      <div class="cc-icon"><i class="fas fa-user-secret"></i></div>
+      <div class="cc-info">
+        <strong>Digital Forensics with Kali Linux</strong>
+        <span>ITRONIX Solutions · #00110496</span>
+      </div>
+    </div>
+    <div class="cert-card cc-udemy">
+      <div class="cc-icon"><i class="fas fa-shield-halved"></i></div>
+      <div class="cc-info">
+        <strong>Fundamentals of Network Security</strong>
+        <span>Udemy</span>
+      </div>
+    </div>
+    <div class="cert-card cc-linux2">
+      <div class="cc-icon"><i class="fas fa-terminal"></i></div>
+      <div class="cc-info">
+        <strong>Linux Command Line</strong>
+        <span>Udemy</span>
+      </div>
+    </div>
+    <div class="cert-card cc-google">
+      <div class="cc-icon"><i class="fab fa-google"></i></div>
+      <div class="cc-info">
+        <strong>Online Marketing Fundamentals</strong>
+        <span>Google Digital Garage</span>
+      </div>
+    </div>
+    <div class="cert-card cc-crisis">
+      <div class="cc-icon"><i class="fas fa-comments"></i></div>
+      <div class="cc-info">
+        <strong>Crisis Communication</strong>
+        <span>LinkedIn / NASBA</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="infosys-section">
+    <div class="infosys-header">
+      <i class="fas fa-building-columns"></i>
+      <span>Infosys Internal Certifications</span>
+    </div>
+    <div class="infosys-pills">
+      <span><i class="fas fa-check"></i> Introduction to SQL</span>
+      <span><i class="fas fa-check"></i> Cyber Security in SDLC</span>
+      <span><i class="fas fa-check"></i> Introduction to Asset Management</span>
+      <span><i class="fas fa-check"></i> Data Privacy Compliance &amp; Assessment</span>
+      <span><i class="fas fa-check"></i> Pega UI Specialist for Developers</span>
+      <span><i class="fas fa-check"></i> Root Cause Analysis</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TESTIMONIALS ═══ -->
+<section id="testimonials" class="sec-testi">
+  <div class="sec-label-center pink"></div>
+  <h2 class="sec-h2 centered">What <span class="underline-grad">Leaders Say</span></h2>
+
+  <div class="testi-carousel" id="testiCarousel">
+    <div class="tc-track" id="tcTrack">
+
+      <div class="tc-slide">
+        <div class="tc-quote"><i class="fas fa-quote-left"></i></div>
+        <p>"Narendra worked closely with development and operations teams to ensure smooth deployments, stable environments, and efficient delivery pipelines. He demonstrated strong ownership of infrastructure, automation, and system reliability while consistently meeting project expectations. His disciplined approach and problem-solving mindset made him a dependable contributor to the organization. "</p>
+        <div class="tc-person">
+          <img src="Moeez.jpeg" alt="Moeez Shaikh"/>
+          <div class="tc-info">
+            <strong>Moeez Shaikh</strong>
+            <em>Senior Director of Operations</em>
+            <small>First Connect Digital, Pune</small>
+          </div>
+          <a href="https://www.linkedin.com/in/moeez-shaikh-a60237218/" target="_blank" class="tc-li"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+
+      <div class="tc-slide">
+        <div class="tc-quote"><i class="fas fa-quote-left"></i></div>
+        <p>"Narendra is a dedicated and professional individual who approaches his work with sincerity and consistency. He is reliable and works well with others."</p>
+        <div class="tc-person">
+          <img src="Chris.jpeg" alt="Chris L"/>
+          <div class="tc-info">
+            <strong>Chris L</strong>
+            <em>CEO</em>
+            <small>Bython Media</small>
+          </div>
+          <a href="https://www.linkedin.com/in/chris-leger-0450a63/" target="_blank" class="tc-li"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+
+      <div class="tc-slide">
+        <div class="tc-quote"><i class="fas fa-quote-left"></i></div>
+        <p>"Narendra Danane is an outstanding and highly disciplined professional who consistently delivers results with focus and ownership. He demonstrates a strong leadership mindset, handling responsibilities with maturity, clear communication, and accountability. A dependable team player and natural leader, he adds real value wherever he works and comes highly recommended."</p>
+        <div class="tc-person">
+          <img src="Aniket.jpeg" alt="Aniket More"/>
+          <div class="tc-info">
+            <strong>Aniket More</strong>
+            <em>Consultant</em>
+            <small>NetCom Learning</small>
+          </div>
+          <a href="https://www.linkedin.com/in/aniket-more-2ba6b1226/" target="_blank" class="tc-li"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+
+      <div class="tc-slide">
+        <div class="tc-quote"><i class="fas fa-quote-left"></i></div>
+        <p>"Coming Soon..........."</p>
+        <div class="tc-person">
+          <img src="Sai.jpeg" alt="Sai Phani"/>
+          <div class="tc-info">
+            <strong>Sai Phani Prashanth Durgi</strong>
+            <em>Technology Lead</em>
+            <small>Infosys (DTE Energy)</small>
+          </div>
+          <a href="https://www.linkedin.com/in/durgi-sai-phani-prashanth/" target="_blank" class="tc-li"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+
+      <div class="tc-slide">
+        <div class="tc-quote"><i class="fas fa-quote-left"></i></div>
+        <p>"Coming Soon..........."</p>
+        <div class="tc-person">
+          <img src="Craig.jpeg" alt="Craig Sutton"/>
+          <div class="tc-info">
+            <strong>Craig Sutton</strong>
+            <em>Manager, IT Operations</em>
+            <small>Infosys (Liberty Global)</small>
+          </div>
+          <a href="https://www.linkedin.com/in/craig-sutton-0b659040/" target="_blank" class="tc-li"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+
+    </div>
+    <div class="tc-nav">
+      <button id="tcPrev"><i class="fas fa-arrow-left"></i></button>
+      <div class="tc-dots" id="tcDots"></div>
+      <button id="tcNext"><i class="fas fa-arrow-right"></i></button>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CSR ═══ -->
+<section id="csr" class="sec-csr">
+  <div class="sec-label-center orange"></div>
+  <h2 class="sec-h2 centered">Giving <span class="underline-grad">Back to Society</span></h2>
+  <div class="csr-grid">
+    <div class="csr-card csr-zomato"><i class="fas fa-utensils"></i><strong>Zomato Feeding India</strong><p>Fighting hunger through food redistribution across India.</p></div>
+    <div class="csr-card csr-robin"><i class="fas fa-hand-holding-heart"></i><strong>Robin Hood Army</strong><p>Collecting surplus food from restaurants for the urban poor.</p></div>
+    <div class="csr-card csr-pfa"><i class="fas fa-paw"></i><strong>People for Animals</strong><p>India's largest animal welfare and rescue organisation.</p></div>
+    <div class="csr-card csr-blue"><i class="fas fa-dog"></i><strong>Blue Cross of India</strong><p>Dedicated to animal welfare — rescue, shelter &amp; adoption.</p></div>
+    <div class="csr-card csr-drushti"><i class="fas fa-eye"></i><strong>DRUSHTI – Vision For Blind</strong><p>Empowering the visually impaired through education &amp; tech.</p></div>
+  </div>
+</section>
+
+<!-- ═══ CONTACT ═══ -->
+<section id="contact" class="sec-contact">
+  <div class="contact-gradient-bg"></div>
+  <div class="sec-label-center white"></div>
+  <h2 class="sec-h2 centered white-h2">Let's Build <span class="underline-white">Something Great</span></h2>
+  <p class="sec-sub white-sub">Open to SRE · DevOps · Cloud Infrastructure opportunities</p>
+  <div class="contact-grid">
+    <a href="mailto:narendradanane@gmail.com" class="contact-card cc-gm">
+      <div class="cc-ico"><i class="fas fa-envelope"></i></div>
+      <div><small>Email</small><strong>narendradanane@gmail.com</strong></div>
+    </a>
+    <a href="https://github.com/narendradanane" target="_blank" class="contact-card cc-gh">
+      <div class="cc-ico"><i class="fab fa-github"></i></div>
+      <div><small>GitHub</small><strong>github.com/narendradanane</strong></div>
+    </a>
+    <a href="https://www.linkedin.com/in/narendra-danane-a9145b255/" target="_blank" class="contact-card cc-lin">
+      <div class="cc-ico"><i class="fab fa-linkedin-in"></i></div>
+      <div><small>LinkedIn</small><strong>narendra-danane-a9145b255</strong></div>
+    </a>
+    <a href="https://instagram.com/narendradanane_" target="_blank" class="contact-card cc-insta">
+      <div class="cc-ico"><i class="fab fa-instagram"></i></div>
+      <div><small>Instagram</small><strong>narendradanane_</strong></div>
+    </a>
+    <a href="https://wa.me/917350060742" target="_blank" class="contact-card cc-wa">
+      <div class="cc-ico"><i class="fab fa-whatsapp"></i></div>
+      <div><small>WhatsApp</small><strong>+91 7350060742</strong></div>
+    </a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="f-brand">
+      <span class="f-dot"></span>
+      <strong>Narendra Danane</strong>
+    </div>
+    <p>DevOps Engineer · SRE · Infrastructure Automation · IAM Specialist</p>
+    <p class="f-copy">&copy; 2026 — Designed for the next opportunity</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
