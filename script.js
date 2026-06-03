@@ -191,6 +191,43 @@ onVisible('.csr-card', el => el.classList.add('visible'), 0.08);
   }, { passive: true });
 })();
 
+/* ── TESTIMONIAL READ MORE MODAL ─────────── */
+(function testiModal() {
+  const overlay = document.getElementById('testiModal');
+  const closeBtn = document.getElementById('testiModalClose');
+  if (!overlay || !closeBtn) return;
+
+  function openModal(slide) {
+    document.getElementById('testiModalText').textContent = slide.dataset.full || '';
+    document.getElementById('testiModalName').textContent = slide.dataset.name || '';
+    document.getElementById('testiModalRole').textContent = slide.dataset.role || '';
+    document.getElementById('testiModalCompany').textContent = slide.dataset.company || '';
+    const img = document.getElementById('testiModalImg');
+    img.src = slide.dataset.img || '';
+    img.alt = slide.dataset.name || '';
+    const li = document.getElementById('testiModalLi');
+    li.href = slide.dataset.li || '#';
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  document.querySelectorAll('.tc-read-more').forEach(btn => {
+    btn.addEventListener('click', e => {
+      e.stopPropagation();
+      openModal(btn.closest('.tc-slide'));
+    });
+  });
+
+  closeBtn.addEventListener('click', closeModal);
+  overlay.addEventListener('click', e => { if (e.target === overlay) closeModal(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+})();
+
 /* ── PIPELINE PULSE ──────────────────────── */
 (function pipelinePulse() {
   const nodes = document.querySelectorAll('.hlp-ico');

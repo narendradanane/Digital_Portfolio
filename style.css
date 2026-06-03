@@ -910,7 +910,24 @@ pointer-events:none;
   border: 2px solid var(--border); position: relative;
 }
 .tc-quote { font-size: 3rem; color: var(--purple); opacity: .25; margin-bottom: .5rem; line-height: 1; }
-.tc-slide p { font-size: 1rem; color: var(--muted); line-height: 1.9; font-style: italic; margin-bottom: 2rem; }
+.tc-slide p { font-size: 1rem; color: var(--muted); line-height: 1.9; font-style: italic; margin-bottom: 1rem; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; }
+.tc-read-more { background: none; border: none; padding: 0; font-size: .88rem; font-weight: 700; color: var(--purple); cursor: pointer; margin-bottom: 2rem; display: inline-block; letter-spacing: .01em; }
+.tc-read-more:hover { text-decoration: underline; }
+/* ── Testimonial Modal ── */
+.testi-modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,.55); backdrop-filter: blur(4px); z-index: 9999; align-items: center; justify-content: center; padding: 1.5rem; }
+.testi-modal-overlay.open { display: flex; }
+.testi-modal { background: var(--white); border-radius: 24px; padding: 2.5rem 3rem; max-width: 640px; width: 100%; max-height: 85vh; overflow-y: auto; position: relative; border: 2px solid var(--border); box-shadow: 0 20px 60px rgba(0,0,0,.18); }
+.testi-modal-close { position: absolute; top: 1.2rem; right: 1.4rem; background: none; border: none; font-size: 1.5rem; color: var(--muted); cursor: pointer; line-height: 1; }
+.testi-modal-close:hover { color: var(--purple); }
+.testi-modal-quote { font-size: 3rem; color: var(--purple); opacity: .25; line-height: 1; margin-bottom: .5rem; }
+.testi-modal p { font-size: 1rem; color: var(--muted); line-height: 1.9; font-style: italic; margin-bottom: 2rem; white-space: pre-line; }
+.testi-modal .tc-person { display: flex; align-items: center; gap: 1rem; }
+.testi-modal .tc-person img { width: 54px; height: 54px; border-radius: 50%; object-fit: cover; border: 3px solid var(--purple); flex-shrink: 0; }
+.testi-modal .tc-info strong { display: block; font-size: 1rem; font-weight: 800; color: var(--txt); }
+.testi-modal .tc-info em { display: block; font-size: .82rem; color: var(--purple); font-style: normal; font-weight: 600; }
+.testi-modal .tc-info small { font-size: .78rem; color: var(--muted); }
+.testi-modal .tc-li { font-size: 1.4rem; color: var(--muted); flex-shrink: 0; }
+.testi-modal .tc-li:hover { color: #0a66c2; }
 .tc-person { display: flex; align-items: center; gap: 1rem; }
 .tc-person img { width: 54px; height: 54px; border-radius: 50%; object-fit: cover; border: 3px solid var(--purple); flex-shrink: 0; }
 .tc-info { flex: 1; }
