@@ -176,8 +176,6 @@ onVisible('.csr-card', el => el.classList.add('visible'), 0.08);
     track.style.transform = `translateX(-${cur * 100}%)`;
     dotsW.querySelectorAll('.tc-dot').forEach((d, i) => d.classList.toggle('active', i === cur));
     reset();
-    // Re-check overflow after slide transition completes
-    setTimeout(updateReadMoreVisibility, 50);
   }
   function reset() { clearInterval(timer); timer = setInterval(() => go(cur + 1), 5500); }
 
@@ -198,18 +196,6 @@ onVisible('.csr-card', el => el.classList.add('visible'), 0.08);
   const overlay = document.getElementById('testiModal');
   const closeBtn = document.getElementById('testiModalClose');
   if (!overlay || !closeBtn) return;
-
-  // Ensure every slide has a .tc-read-more button; inject if missing
-  document.querySelectorAll('.tc-slide').forEach(slide => {
-    if (!slide.querySelector('.tc-read-more')) {
-      const btn = document.createElement('button');
-      btn.className = 'tc-read-more';
-      btn.textContent = 'Read More';
-      btn.style.display = 'none'; // hidden until overflow check runs
-      const p = slide.querySelector('p');
-      if (p) p.after(btn);
-    }
-  });
 
   function openModal(slide) {
     document.getElementById('testiModalText').textContent = slide.dataset.full || '';
@@ -240,29 +226,6 @@ onVisible('.csr-card', el => el.classList.add('visible'), 0.08);
   closeBtn.addEventListener('click', closeModal);
   overlay.addEventListener('click', e => { if (e.target === overlay) closeModal(); });
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
-})();
-
-/* ── TESTIMONIAL READ MORE: OVERFLOW-AWARE VISIBILITY ── */
-function updateReadMoreVisibility() {
-  document.querySelectorAll('.tc-slide').forEach(slide => {
-    const p   = slide.querySelector('p');
-    const btn = slide.querySelector('.tc-read-more');
-    if (!p || !btn) return;
-    // scrollHeight > clientHeight means text is clipped by line-clamp
-    btn.style.display = p.scrollHeight > p.clientHeight ? 'inline-block' : 'none';
-  });
-}
-
-// Run on load (after fonts/layout settle)
-window.addEventListener('load', updateReadMoreVisibility);
-
-// Run on resize (debounced)
-(function() {
-  let resizeTimer;
-  window.addEventListener('resize', function() {
-    clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(updateReadMoreVisibility, 100);
-  });
 })();
 
 /* ── PIPELINE PULSE ──────────────────────── */
