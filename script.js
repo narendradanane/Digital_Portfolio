@@ -275,3 +275,33 @@ onVisible('.csr-card', el => el.classList.add('visible'), 0.08);
 
 /* ── ACTIVE NAV INIT ─────────────────────── */
 window.dispatchEvent(new Event('scroll'));
+/* ── ANALYTICS EVENT TRACKING ───────────── */
+(function () {
+  function gaEvent(name, params) {
+    if (typeof gtag === 'function') gtag('event', name, params || {});
+  }
+
+  // CV / Resume download tracking
+  document.querySelectorAll('a[download]').forEach(function (el) {
+    el.addEventListener('click', function () {
+      gaEvent('cv_download', { file_name: el.getAttribute('href') });
+    });
+  });
+
+  // Social & contact link tracking
+  var socialMap = [
+    { selector: 'a[href*="linkedin.com/in/narendra"]', event: 'linkedin_click' },
+    { selector: 'a[href*="github.com/narendradanane"]', event: 'github_click' },
+    { selector: 'a[href*="mailto:"]', event: 'email_click' },
+    { selector: 'a[href*="wa.me/"]', event: 'whatsapp_click' },
+    { selector: 'a[href="#contact"]', event: 'contact_click' },
+  ];
+
+  socialMap.forEach(function (item) {
+    document.querySelectorAll(item.selector).forEach(function (el) {
+      el.addEventListener('click', function () {
+        gaEvent(item.event, { link_url: el.getAttribute('href') });
+      });
+    });
+  });
+})();
